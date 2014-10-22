@@ -2,22 +2,20 @@
 layout: default
 ---
 
-<div class="home">
+<div class="content">
 
-  <h1 class="page-heading">Posts</h1>
+    <section class="promo-section">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2><strong>Inspired</strong> by the digital world</h2>
+        <p>We believe that passion drives exceptional results. We combine skills in technology and design to create and build beautiful digital solutions to address your challenges.</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <section class="promo-section">
+
+        <h2>Our customers are unique &mdash; so is our work.</h2>
+        <p>Our mission is simple: deliver unique solutions to drive your business forward.</p>
+
+    </section>
 
 </div>

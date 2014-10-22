@@ -1,0 +1,28 @@
+.site-footer {
+
+    min-height: 100px;
+    padding: 1em;
+    color: #fff;
+    background-color: #222;
+
+    ul {
+
+        li {
+
+            display: inline-block;
+            list-style: none;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+        }
+
+    }
+
+    p {
+        text-align: right;
+    }
+
+}
