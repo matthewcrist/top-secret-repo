@@ -74,9 +74,14 @@
              <use xlink:href="#text" />
         </g>
 
-        <g id="color">
+        <g id="color-light">
              <use xlink:href="#symbol-color" />
              <use xlink:href="#text" fill="#58595B" />
+        </g>
+
+        <g id="color-dark">
+             <use xlink:href="#symbol-color" />
+             <use xlink:href="#text" fill="#fff" />
         </g>
 
     </g>
