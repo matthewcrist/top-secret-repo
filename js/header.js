@@ -23,7 +23,7 @@ define(function (require) {
 
         clearTimeout(scroll.timeout);
 
-        if (screen.width < 960) {
+        if (screen.width < 960 && !$list.is(':visible')) {
 
             scroll.timeout = setTimeout(function () {
 
