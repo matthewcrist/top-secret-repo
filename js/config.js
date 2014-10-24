@@ -4,4 +4,4 @@ require.config({
     }
 });
 
-define(['app', 'ga']);
+define(['app', 'header', 'ga']);
