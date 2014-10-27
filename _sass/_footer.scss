@@ -29,11 +29,7 @@
 
         }
 
-    }
-
-    @media screen and (min-width: $wrapper-inner) {
-
-        section {
+        @media screen and (min-width: $wrapper-inner) {
 
             display: table;
             width: 100%;
