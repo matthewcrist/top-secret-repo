@@ -19,32 +19,36 @@ define(function (require) {
 
     });
 
-    $window.on('scroll', function (e) {
+    if (screen.width < 960 && $header.hasClass('locked')) {
 
-        clearTimeout(scroll.timeout);
+        $window.on('scroll', function (e) {
 
-        if (screen.width < 960 && !$list.is(':visible')) {
+            clearTimeout(scroll.timeout);
 
-            scroll.timeout = setTimeout(function () {
+            if (!$list.is(':visible')) {
 
-                var y = $window.scrollTop();
+                scroll.timeout = setTimeout(function () {
 
-                if (y < scroll.y || y < 200) {
+                    var y = $window.scrollTop();
 
-                    $header.stop(true, true).animate({ top: 0 });
+                    if (y < scroll.y || y < 200) {
 
-                } else {
+                        $header.stop(true, true).animate({ top: 0 });
 
-                    $header.stop(true, true).delay(500).animate({ top: -100 });
+                    } else {
 
-                }
+                        $header.stop(true, true).delay(500).animate({ top: -100 });
 
-                scroll.y = y;
+                    }
 
-            }, 10);
+                    scroll.y = y;
 
-        }
+                }, 10);
 
-    });
+            }
+
+        });
+
+    }
 
 });
