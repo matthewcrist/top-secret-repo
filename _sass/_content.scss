@@ -1,14 +1,23 @@
 .wrapper {
+
     min-height: calc(100% - 80px - 100px);
+
+    .wrapper-inner {
+
+        margin: 0 auto;
+        max-width: $wrapper-inner;
+
+    }
+
 }
 
 .hero {
 
     min-height: 500px;
-    padding-top: 100px;
+    padding-top: $header-height;
 
     h2 {
-        padding: 1em;
+        padding: 1em .25em;
         font-size: 3em;
         line-height: 1.3em;
         font-weight: 100;

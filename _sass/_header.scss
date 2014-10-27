@@ -1,6 +1,6 @@
 .site-header {
 
-    min-height: 80px;
+    min-height: $header-height;
     width: 100%;
     color: #fff;
     background-color: #222;
@@ -16,6 +16,11 @@
         width: 150px;
         height: 50px;
         vertical-align: middle;
+    }
+
+    nav {
+        margin: 0 auto;
+        max-width: $wrapper-inner;
     }
 
     nav, ul {
