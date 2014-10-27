@@ -9,9 +9,51 @@
     .customers {
 
         a {
-            display: inline-block;
-            margin: .34em;
+
+            display: block;
             text-decoration: none;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (min-width: 600px) {
+
+            display: -webkit-box;
+            -webkit-flex-flow: row wrap;
+
+            a {
+
+                -webkit-box-flex: 3;
+
+                img {
+                    display: inline-block;
+                    padding: .1em .2em;
+                    width: 100%;
+                }
+
+                /* Row #1 */
+
+                &.work-byte-light,
+                &.work-newport,
+                &.work-vista {
+                    width: 33.3%
+                }
+
+                /* Row #2 */
+
+                &.work-liberty2 {
+                    width: 43%;
+                }
+
+                &.work-parents {
+                    width: 58%;
+                }
+
+            }
+
         }
 
     }
