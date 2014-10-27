@@ -2,15 +2,25 @@
 
     min-height: 100px;
     padding: 1em;
+    line-height: 1.8em;
     color: #fff;
     background-color: #222;
 
-    ul {
+    section {
 
-        li {
+        margin: 0 auto;
+        max-width: $wrapper-inner;
 
-            display: inline-block;
-            list-style: none;
+        div {
+
+            padding: .5em 0;
+            text-align: center;
+
+            &.social-icons {
+                font-size: 2em;
+                line-height: 1em;
+                cursor: default;
+            }
 
             a {
                 color: inherit;
@@ -21,8 +31,28 @@
 
     }
 
-    p {
-        text-align: right;
+    @media screen and (min-width: 1000px) {
+
+        section {
+
+            display: -webkit-flex;
+
+            div {
+
+                -webkit-flex: 3 auto;
+
+                &:first-of-type {
+                    text-align: left;
+                }
+
+                &:last-of-type {
+                    text-align: right;
+                }
+
+            }
+
+        }
+
     }
 
 }
