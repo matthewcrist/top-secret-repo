@@ -11,22 +11,9 @@
 
 }
 
-.hero {
-
-    min-height: 500px;
-    padding-top: $header-height;
-
-    h2 {
-        padding: 1em .25em;
-        font-size: 3em;
-        line-height: 1.3em;
-        font-weight: 100;
-        color: #fff;
-    }
-
-}
-
 .content {
+
+    @import "_modules";
 
     position: relative;
 

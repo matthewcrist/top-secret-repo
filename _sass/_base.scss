@@ -11,12 +11,20 @@ body {
 }
 
 body {
+
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 1em;
     line-height: 1.3em;
     background-color: #00AED8;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    @media screen and (min-width: 900px) {
+
+        background-attachment: fixed;
+        background-size: cover;
+
+    }
+
 }

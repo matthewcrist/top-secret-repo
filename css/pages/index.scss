@@ -4,6 +4,23 @@
 
 @import "variables";
 
+.hero {
+
+    height: calc(100vh - 200px);
+    min-height: 500px;
+    padding-top: $header-height;
+
+    h2 {
+        padding: 1em .25em;
+        font-size: 3em;
+        line-height: 1.1em;
+        font-weight: 100;
+        color: #fff;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
+
+}
+
 .content {
 
     .customers {
@@ -52,6 +69,22 @@
                     width: 58%;
                 }
 
+            }
+
+        }
+
+    }
+
+    .latest {
+
+        @media screen and (min-width: $wrapper-inner) {
+
+            a {
+                display: table-cell;
+                width: 25%;
+                .module-content {
+                    min-height: 400px;
+                }
             }
 
         }
